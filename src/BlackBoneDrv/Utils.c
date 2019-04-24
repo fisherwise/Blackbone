@@ -352,7 +352,7 @@ ULONG GenEpilogue64( IN PUCHAR pBuf, IN INT retSize )
     return 21;
 }
 
-ULONG GenCall64( IN PUCHAR pBuf, IN PVOID pFn, INT argc, ... )
+ULONG GenCall64( IN PUCHAR pBuf, IN PVOID pFn, IN INT argc, ... )
 {
     va_list vl;
     va_start( vl, argc );
